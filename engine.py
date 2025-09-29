@@ -17,7 +17,7 @@ def run(data):
     if any(a>=b for a,b in zip(days,days[1:])):raise ValueError('Price dates must be unique and ascending')
     prices=[finite(r['close'],'price') for r in observations]
     if not 80 <= len(prices) <= 1500 or min(prices)<=0:
-        raise ValueError('Supply 80–1500 positive adjusted-close prices, oldest first')
+        raise ValueError('Supply 80–1500 positive closing prices, oldest first')
     returns=[prices[i]/prices[i-1]-1 for i in range(1,len(prices))]
     x=[features(returns,i) for i in range(5,len(returns))]
     y=returns[5:]

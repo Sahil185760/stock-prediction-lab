@@ -3,10 +3,8 @@
   "source": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1735689600&period2=1764374400&interval=1d",
   "retrieved_at": "2026-09-25T02:25:29.183594+00:00",
   "price_field": "quote.close (not dividend-adjusted adjclose)",
-  "cutoff_policy": "No price observations after 2025-11-28. Current provider historical record; not an archived 2025 vintage.",
-  "as_of": "2025-11-28",
+  "cutoff_policy": "Only observations through October 29, 2025 retained from the source request. Current provider historical records; not an archived data vintage.",
+  "as_of": "2025-10-29",
   "file": "example.json",
-  "sha256": "35cf002e308d3b7c09e3d1573a57abf71f2511d1a112713df89f17c8c2bd27ee",
-  "model_method": "Ridge regression; Hoerl and Kennard (1970)",
-  "model_source": "https://doi.org/10.1080/00401706.1970.10488634"
+  "sha256": "582da3987cd23062f1ff8b3cbf953eaf2bc7b3d9d2764dbe0e2058c6f4634bda"
 }

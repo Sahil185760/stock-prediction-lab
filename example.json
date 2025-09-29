@@ -1,6 +1,6 @@
 {
-  "dataset_label": "NVDA daily closing prices, Jan\u2013Nov 2025",
-  "as_of": "2025-11-28",
+  "dataset_label": "NVDA daily closing prices, January 2–October 29, 2025",
+  "as_of": "2025-10-29",
   "symbol": "NVDA",
   "observations": [
     {
@@ -830,90 +830,6 @@
     {
       "date": "2025-10-29",
       "close": 207.0399932861328
-    },
-    {
-      "date": "2025-10-30",
-      "close": 202.88999938964844
-    },
-    {
-      "date": "2025-10-31",
-      "close": 202.49000549316406
-    },
-    {
-      "date": "2025-11-03",
-      "close": 206.8800048828125
-    },
-    {
-      "date": "2025-11-04",
-      "close": 198.69000244140625
-    },
-    {
-      "date": "2025-11-05",
-      "close": 195.2100067138672
-    },
-    {
-      "date": "2025-11-06",
-      "close": 188.0800018310547
-    },
-    {
-      "date": "2025-11-07",
-      "close": 188.14999389648438
-    },
-    {
-      "date": "2025-11-10",
-      "close": 199.0500030517578
-    },
-    {
-      "date": "2025-11-11",
-      "close": 193.16000366210938
-    },
-    {
-      "date": "2025-11-12",
-      "close": 193.8000030517578
-    },
-    {
-      "date": "2025-11-13",
-      "close": 186.86000061035156
-    },
-    {
-      "date": "2025-11-14",
-      "close": 190.1699981689453
-    },
-    {
-      "date": "2025-11-17",
-      "close": 186.60000610351562
-    },
-    {
-      "date": "2025-11-18",
-      "close": 181.36000061035156
-    },
-    {
-      "date": "2025-11-19",
-      "close": 186.52000427246094
-    },
-    {
-      "date": "2025-11-20",
-      "close": 180.63999938964844
-    },
-    {
-      "date": "2025-11-21",
-      "close": 178.8800048828125
-    },
-    {
-      "date": "2025-11-24",
-      "close": 182.5500030517578
-    },
-    {
-      "date": "2025-11-25",
-      "close": 177.82000732421875
-    },
-    {
-      "date": "2025-11-26",
-      "close": 180.25999450683594
-    },
-    {
-      "date": "2025-11-28",
-      "close": 177.0
     }
   ],
   "provenance": {
@@ -921,6 +837,6 @@
     "source": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1735689600&period2=1764374400&interval=1d",
     "retrieved_at": "2026-09-25T02:25:29.183594+00:00",
     "price_field": "quote.close (not dividend-adjusted adjclose)",
-    "cutoff_policy": "No price observations after 2025-11-28. Current provider historical record; not an archived 2025 vintage."
+    "cutoff_policy": "Only observations through October 29, 2025 retained from the source request. Current provider historical records; not an archived data vintage."
   }
 }
