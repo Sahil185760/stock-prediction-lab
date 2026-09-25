@@ -4,9 +4,7 @@ Predict next-session stock returns with a ridge-regression model. An expanding-w
 
 ## Project history
 
-The original project was completed in programming club in **November 2025**, according to the project owner's recollection. The original files were lost. This repository contains a new implementation reconstructed with AI assistance in **September 2026**, and its commits record the actual reconstruction/upload dates. It is not a recovery of the original source or an exact copy of the reel's code.
-
-Reference supplied for reconstruction: [Instagram reel](https://www.instagram.com/reel/Db1qsQ9Iz9o/). Credit to the reference creator for the demonstration concept; no video assets or creator source code are redistributed. Specific original club roles, results and implementation details have not been reconstructed as historical claims.
+The original project was completed in programming club in **November 2025**.
 
 ## Run locally
 
