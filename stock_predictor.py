@@ -1,4 +1,4 @@
-"""Run StockLab from a terminal or an IDE's Python console."""
+"""Run Stock Pricing Predictor from a terminal or an IDE's Python console."""
 import argparse
 import csv
 import json
@@ -39,7 +39,7 @@ def analyze(path=DEFAULT_DATA, as_of=None, symbol=None):
 
 
 def print_report(result, rows=10):
-    print(f"StockLab | {result['symbol']} | as of {result['details']['historical_as_of']}")
+    print(f"Stock Pricing Predictor | {result['symbol']} | as of {result['details']['historical_as_of']}")
     print(result['dataset_label'])
     print()
     for label, value in result['metrics'].items():
@@ -73,7 +73,7 @@ def main(argv=None):
             args.output.write_text(json.dumps(result, indent=2, allow_nan=False) + '\n')
             print(f'\nSaved: {args.output}')
     except (OSError, ValueError, TypeError, KeyError, IndexError) as exc:
-        parser.exit(2, f'StockLab: {exc}\n')
+        parser.exit(2, f'Stock Pricing Predictor: {exc}\n')
 
 
 if __name__ == '__main__':

@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from stocklab import DEFAULT_DATA, analyze
+from stock_predictor import DEFAULT_DATA, analyze
 
 
 class ConsoleTests(unittest.TestCase):
@@ -21,13 +21,13 @@ class ConsoleTests(unittest.TestCase):
             self.assertEqual(analyze(path)['rows'], analyze()['rows'])
 
     def test_runs_outside_project_and_exports_json(self):
-        script = Path(__file__).with_name('stocklab.py')
+        script = Path(__file__).with_name('stock_predictor.py')
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / 'result.json'
             result = subprocess.run([sys.executable, str(script), '--output', str(output)],
                                     cwd=directory, capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
-            self.assertIn('StockLab | NVDA | as of 2025-10-29', result.stdout)
+            self.assertIn('Stock Pricing Predictor | NVDA | as of 2025-10-29', result.stdout)
             self.assertTrue(json.loads(output.read_text())['rows'])
 
     def test_custom_cutoff_rejects_future_prices(self):

@@ -1,4 +1,4 @@
-# StockLab — stock return predictor
+# Stock Pricing Predictor: stock return predictor
 
 A Python console program for estimating next-session returns with ridge regression and evaluating predictions against a zero-return baseline.
 
@@ -7,17 +7,17 @@ A Python console program for estimating next-session returns with ridge regressi
 Requires Python 3.9 or later. Uses only the standard library.
 
 ```sh
-python3 stocklab.py
-python3 stocklab.py --rows 20 --output results.json
-python3 stocklab.py prices.csv --symbol NVDA --as-of 2025-10-29
+python3 stock_predictor.py
+python3 stock_predictor.py --rows 20 --output results.json
+python3 stock_predictor.py prices.csv --symbol NVDA --as-of 2025-10-29
 ```
 
-In an IDE, open the project folder and run `stocklab.py`. Results print in the run console. The bundled dataset is located relative to the script, so it works from another working directory too.
+In an IDE, open the project folder and run `stock_predictor.py`. Results print in the run console. The bundled dataset is located relative to the script, so it works from another working directory too.
 
 For an interactive Python console:
 
 ```python
-from stocklab import analyze, print_report
+from stock_predictor import analyze, print_report
 
 result = analyze()
 print_report(result)
@@ -38,7 +38,7 @@ The console reports mean absolute error, baseline error, directional accuracy, n
 
 ## Files
 
-- `stocklab.py`: console entry point, CSV/JSON loading and reporting.
+- `stock_predictor.py`: console entry point, CSV/JSON loading and reporting.
 - `engine.py`: time-ordered features, validation and evaluation.
 - `models.py`: standardized ridge regression using a pivoted linear solve.
 - `example.json`: offline historical dataset.
