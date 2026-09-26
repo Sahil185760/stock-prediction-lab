@@ -1,6 +1,6 @@
 {
-  "dataset_label": "NVDA daily closing prices, January 2–October 29, 2025",
-  "as_of": "2025-10-29",
+  "dataset_label": "NVDA daily closing prices, January 2–August 29, 2025",
+  "as_of": "2025-08-29",
   "symbol": "NVDA",
   "observations": [
     {
@@ -662,174 +662,6 @@
     {
       "date": "2025-08-29",
       "close": 174.17999267578125
-    },
-    {
-      "date": "2025-09-02",
-      "close": 170.77999877929688
-    },
-    {
-      "date": "2025-09-03",
-      "close": 170.6199951171875
-    },
-    {
-      "date": "2025-09-04",
-      "close": 171.66000366210938
-    },
-    {
-      "date": "2025-09-05",
-      "close": 167.02000427246094
-    },
-    {
-      "date": "2025-09-08",
-      "close": 168.30999755859375
-    },
-    {
-      "date": "2025-09-09",
-      "close": 170.75999450683594
-    },
-    {
-      "date": "2025-09-10",
-      "close": 177.3300018310547
-    },
-    {
-      "date": "2025-09-11",
-      "close": 177.1699981689453
-    },
-    {
-      "date": "2025-09-12",
-      "close": 177.82000732421875
-    },
-    {
-      "date": "2025-09-15",
-      "close": 177.75
-    },
-    {
-      "date": "2025-09-16",
-      "close": 174.8800048828125
-    },
-    {
-      "date": "2025-09-17",
-      "close": 170.2899932861328
-    },
-    {
-      "date": "2025-09-18",
-      "close": 176.24000549316406
-    },
-    {
-      "date": "2025-09-19",
-      "close": 176.6699981689453
-    },
-    {
-      "date": "2025-09-22",
-      "close": 183.61000061035156
-    },
-    {
-      "date": "2025-09-23",
-      "close": 178.42999267578125
-    },
-    {
-      "date": "2025-09-24",
-      "close": 176.97000122070312
-    },
-    {
-      "date": "2025-09-25",
-      "close": 177.69000244140625
-    },
-    {
-      "date": "2025-09-26",
-      "close": 178.19000244140625
-    },
-    {
-      "date": "2025-09-29",
-      "close": 181.85000610351562
-    },
-    {
-      "date": "2025-09-30",
-      "close": 186.5800018310547
-    },
-    {
-      "date": "2025-10-01",
-      "close": 187.24000549316406
-    },
-    {
-      "date": "2025-10-02",
-      "close": 188.88999938964844
-    },
-    {
-      "date": "2025-10-03",
-      "close": 187.6199951171875
-    },
-    {
-      "date": "2025-10-06",
-      "close": 185.5399932861328
-    },
-    {
-      "date": "2025-10-07",
-      "close": 185.0399932861328
-    },
-    {
-      "date": "2025-10-08",
-      "close": 189.11000061035156
-    },
-    {
-      "date": "2025-10-09",
-      "close": 192.57000732421875
-    },
-    {
-      "date": "2025-10-10",
-      "close": 183.16000366210938
-    },
-    {
-      "date": "2025-10-13",
-      "close": 188.32000732421875
-    },
-    {
-      "date": "2025-10-14",
-      "close": 180.02999877929688
-    },
-    {
-      "date": "2025-10-15",
-      "close": 179.8300018310547
-    },
-    {
-      "date": "2025-10-16",
-      "close": 181.80999755859375
-    },
-    {
-      "date": "2025-10-17",
-      "close": 183.22000122070312
-    },
-    {
-      "date": "2025-10-20",
-      "close": 182.63999938964844
-    },
-    {
-      "date": "2025-10-21",
-      "close": 181.16000366210938
-    },
-    {
-      "date": "2025-10-22",
-      "close": 180.27999877929688
-    },
-    {
-      "date": "2025-10-23",
-      "close": 182.16000366210938
-    },
-    {
-      "date": "2025-10-24",
-      "close": 186.25999450683594
-    },
-    {
-      "date": "2025-10-27",
-      "close": 191.49000549316406
-    },
-    {
-      "date": "2025-10-28",
-      "close": 201.02999877929688
-    },
-    {
-      "date": "2025-10-29",
-      "close": 207.0399932861328
     }
   ],
   "provenance": {
@@ -837,6 +669,6 @@
     "source": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1735689600&period2=1764374400&interval=1d",
     "retrieved_at": "2026-09-25T02:25:29.183594+00:00",
     "price_field": "quote.close (not dividend-adjusted adjclose)",
-    "cutoff_policy": "Only observations through October 29, 2025 retained from the source request. Current provider historical records; not an archived data vintage."
+    "cutoff_policy": "Only observations before September 1, 2025 retained from the source request. Latest included session: August 29, 2025. Current provider historical records; not an archived data vintage."
   }
 }

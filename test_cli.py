@@ -27,12 +27,12 @@ class ConsoleTests(unittest.TestCase):
             result = subprocess.run([sys.executable, str(script), '--output', str(output)],
                                     cwd=directory, capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, result.stderr)
-            self.assertIn('Stock Pricing Predictor | NVDA | as of 2025-10-29', result.stdout)
+            self.assertIn('Stock Pricing Predictor | NVDA | as of 2025-08-29', result.stdout)
             self.assertTrue(json.loads(output.read_text())['rows'])
 
     def test_custom_cutoff_rejects_future_prices(self):
         with self.assertRaises(ValueError):
-            analyze(as_of='2025-10-28')
+            analyze(as_of='2025-08-28')
 
 
 if __name__ == '__main__':

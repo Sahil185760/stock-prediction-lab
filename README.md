@@ -9,7 +9,7 @@ Requires Python 3.9 or later. Uses only the standard library.
 ```sh
 python3 stock_predictor.py
 python3 stock_predictor.py --rows 20 --output results.json
-python3 stock_predictor.py prices.csv --symbol NVDA --as-of 2025-10-29
+python3 stock_predictor.py prices.csv --symbol NVDA --as-of 2025-08-29
 ```
 
 In an IDE, open the project folder and run `stock_predictor.py`. Results print in the run console. The bundled dataset is located relative to the script, so it works from another working directory too.
@@ -26,7 +26,7 @@ result['details']['estimated_next_close']
 
 ## Data
 
-The bundled `example.json` contains **207 NVDA daily closing prices from January 2 through October 29, 2025**, with an **October 29, 2025 cutoff**. Source: [Yahoo Finance historical prices](https://finance.yahoo.com/quote/NVDA/history/). `DATA_PROVENANCE.json` records the source request, retrieval time, price field and dataset checksum. Prices use `quote.close`, not dividend-adjusted close; historical provider records can be revised.
+The bundled `example.json` contains **165 NVDA daily closing prices from January 2 through August 29, 2025**, with an **August 29, 2025 cutoff**. No September or later observations are included. Source: [Yahoo Finance historical prices](https://finance.yahoo.com/quote/NVDA/history/). `DATA_PROVENANCE.json` records the source request, retrieval time, price field and dataset checksum. Prices use `quote.close`, not dividend-adjusted close; historical provider records can be revised.
 
 Supply a JSON file in the same format or a CSV with `date,close` columns. Inputs require 80–1,500 positive finite closing prices, ordered by unique ISO dates. Data after the cutoff is rejected. `--symbol` is a label, not a download request. Use a consistent price convention throughout a dataset.
 

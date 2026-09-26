@@ -3,8 +3,8 @@
   "source": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1735689600&period2=1764374400&interval=1d",
   "retrieved_at": "2026-09-25T02:25:29.183594+00:00",
   "price_field": "quote.close (not dividend-adjusted adjclose)",
-  "cutoff_policy": "Only observations through October 29, 2025 retained from the source request. Current provider historical records; not an archived data vintage.",
-  "as_of": "2025-10-29",
+  "cutoff_policy": "Only observations before September 1, 2025 retained from the source request. Latest included session: August 29, 2025. Current provider historical records; not an archived data vintage.",
+  "as_of": "2025-08-29",
   "file": "example.json",
-  "sha256": "582da3987cd23062f1ff8b3cbf953eaf2bc7b3d9d2764dbe0e2058c6f4634bda"
+  "sha256": "709f72333ce11d7de0d5a582a740b8cd26326205bbc975cc9f2e3726e51a70b3"
 }

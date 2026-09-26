@@ -31,4 +31,8 @@ class Tests(unittest.TestCase):
   self.assertEqual(out['rows'][-1]['date'],self.data['observations'][-1]['date'])
   actual=self.data['observations'][-1]['close']/self.data['observations'][-2]['close']-1
   self.assertAlmostEqual(out['rows'][-1]['actual_return'],actual)
+ def test_bundled_data_is_before_september(self):
+  self.assertEqual(self.data['as_of'],'2025-08-29')
+  self.assertEqual(self.data['observations'][-1]['date'],'2025-08-29')
+  self.assertTrue(all(r['date']<'2025-09-01' for r in self.data['observations']))
 if __name__=='__main__':unittest.main()
